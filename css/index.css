@@ -1,0 +1,111 @@
+body{
+    background-color: lightgrey;
+    color: navy;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
+    margin-left: 50px;
+    width: 100vh;
+    height: 100vh;
+    display: block;
+}
+
+h1{
+    background-color: lightgrey;
+    color: navy;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 20px;
+    border: 20px;
+    border-style: double;
+    border-color: black;
+    margin-bottom: 30px;
+}
+
+.courses{
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
+    width: 100%;
+}
+
+.imageContainer{
+    padding: 0;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+img{
+    border: 10px;
+    border-style: ridge; 
+    border-color: black;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+h2{
+    background-color: lightgray;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    font-style: normal;
+    padding: 20px;
+    border: 10px;
+   border-style: ridge;
+   border-color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+.languages{
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: large;
+}
+h3{
+    background-color: lightgray;
+    border: 5px;
+    text-align: left;
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 10px;    
+    border-style: outset;
+    margin-top: 35px;
+    border-color: black;
+}
+
+.courses > div:hover{
+    background-color: orange;
+}
+.languages > div:hover{
+    background-color: orange;
+}
+
+.socialMedia{
+    display: block;
+    padding-top: 10px;
+    font-size: large;
+    padding-left: 20px;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.socialMedia > div:hover{
+    background-color: orange;
+}
