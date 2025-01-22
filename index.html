@@ -18,6 +18,7 @@
             <div><a href="#Skills"><i class="fa fa-cogs"></i>Skills</a></div>
             <div><a href="#Projects"><i class="fa fa-briefcase"></i>Projects</a></div>
             <div><a href="#Connect"><i class="fa fa-handshake-o"></i>Connect</a></div>
+            <div><a href="#leave_message"><i class="fa fa-envelope"></i>Message</a></div>
         </nav>
         <h1>Jamarius "Mario" Thorpe</h1>
         <div class="imageContainer">
@@ -111,7 +112,7 @@
         <section id="skills">
             <h2>Skills</h2>
             <div class="skills-list">
-                <ul>
+                <ul class="ul-skill-list">
 
                 </ul>
             </div>
@@ -124,6 +125,24 @@
                 <br>
                 <div class="social"><a href="https://github.com/mariothorpe" class="fa fa-github">  GitHub</a></div>
             </div>
+        </section>
+        <section id="Message">
+            <h2>Leave a Message</h2>
+                <form id="leave_message" class="contactForm">
+                    <label for="usersName">User Name:</label>
+                    <input type="text" name="usersName" required>
+                    <label for="usersEmail">User Email:</label>
+                    <input type="email" name="usersEmail" required>
+                    <label for="usersMessage">User Message:</label>
+                    <textarea name="usersMessage" required></textarea>
+                    <button type="submit">Submit</button>  
+                </form>
+        </section>
+        <section id="Messages">
+            <h2>Messages</h2>
+            <ul class="messageList">
+
+            </ul>
         </section>
         <script src="js/index.js" async defer></script>
     </body>

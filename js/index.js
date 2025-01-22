@@ -1,6 +1,6 @@
 let body = document.getElementsByTagName("body")[0];
-let f = document.createElement("footer");
-body.appendChild(f);
+let foot = document.createElement("footer");
+body.appendChild(foot);
 
 let today = new Date();
 let thisYear = today.getFullYear();
@@ -17,3 +17,29 @@ for (let i = 0; i < skills.length; i++) {
     skill.innerHTML = skills[i];
     skillsList.appendChild(skill);
 }
+let messageForm = document.getElementById("leave_message");
+messageForm.addEventListener("submit", (ev) => {
+    ev.preventDefault();
+    let userName = ev.target.usersName.value;
+    console.log(userName);
+    let userEmail = ev.target.usersEmail.value;
+    console.log(userEmail);
+    let userMessage = ev.target.usersMessage.value;
+    console.log(userMessage);
+    let messageSection = document.getElementById("Messages");
+    let messageList = messageSection.getElementsByTagName("ul");
+    let newMessage = document.createElement("li");
+    newMessage.className= "messageListItem";
+    newMessage.innerHTML = `<a href: mailto:"${userEmail}">${userName}</a><span> - ${userMessage}</span>`
+    let removeButton = document.createElement("button");
+    removeButton.innerHTML = "Remove";
+    removeButton.type = "button";
+    removeButton.className = "removeButton";
+    removeButton.addEventListener("click", function(ev) {
+        let entry = this.parentNode;
+        entry.remove()
+    });
+    newMessage.appendChild(removeButton);
+    messageList[0].append(newMessage);
+    messageForm.reset();
+});
