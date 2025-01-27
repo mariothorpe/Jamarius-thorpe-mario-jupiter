@@ -43,3 +43,21 @@ messageForm.addEventListener("submit", (ev) => {
     messageList[0].append(newMessage);
     messageForm.reset();
 });
+
+fetch('https://api.github.com/users/mariothorpe/repos')
+    .then(response => response.json())
+    .then((repositories) => {
+        console.log(repositories); 
+        let projectSection = document.getElementById("Projects");
+        let projectList = projectSection.getElementsByTagName("ul")[0];
+        for (let i = 0; i < repositories.length; i++) {
+                let project = document.createElement("li");
+                project.innerText = repositories[i].name;
+                projectList.appendChild(project);   
+        }
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+    
+    
