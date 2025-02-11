@@ -1,7 +1,7 @@
 /*desktop-first (code is for desktop, until stated otherwise) */
 /* Content of my webpage/paragraph */
 body{
-    background-color: lightgrey;
+    background-color: rgba(245, 255, 173, 0.249);
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large;
@@ -14,7 +14,7 @@ body{
 }
 /* Name Plate/Header */
 h1{
-    background-color: lightgrey;
+    background-color: whitesmoke;
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
@@ -94,9 +94,9 @@ img{
     margin: auto;
 }
 h2{
-    background-color: lightgray;
+    background-color: whitesmoke;
     text-align: center;
-    font-size: xx-large;
+    font-size: 25px;
     font-weight: bold;
     font-style: italic;
     padding: 15px;
@@ -118,7 +118,7 @@ h2{
     gap: 10px;
 }
 h3{
-    background-color: lightgray;
+    background-color: whitesmoke;
     border: 5px;
     text-align: left;
     font-size: large;
@@ -135,6 +135,9 @@ h3{
     background-color: yellow;
 }
 .languages > div:hover{
+    background-color: yellow;
+}
+.project-list ul li:hover{
     background-color: yellow;
 }
 
@@ -274,7 +277,7 @@ nav ul{
     }
     .imageContainer{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         gap: 10px;
     }
@@ -384,6 +387,11 @@ nav ul{
         display: flex;
         flex-direction: column;
         gap: 5px;
+    }
+    .project-list ul li{
+        font-size: 16px;
+        font-weight: bold;
+        list-style-type: none;
     }
     .projectList{
         display: flex;
