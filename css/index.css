@@ -169,6 +169,9 @@ nav{
     top: 0;
     max-width: 100%;
     min-height: 15%;
+    border: 5px;
+    border-style: outset;
+    border-color: black;
 } 
 nav a{
     float: left;
